@@ -1,11 +1,57 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main class="max-w-7xl mx-auto py-12 px-6">
+		<section class="mb-16">
+			<h2 class="text-3xl font-ubuntu font-bold text-darkGreen dark:text-silver mb-8">¿Qué Hacemos?</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="service bg-white dark:bg-davysGray p-6 rounded-lg shadow-md hover:scale-105 transition">
+					<h3 class="text-xl font-ubuntu font-bold text-darkGreen dark:text-silver mb-4">Micro SaaS</h3>
+					<p class="font-noto text-davysGray dark:text-lightGray">Desarrollamos soluciones de software personalizadas para automatizar tareas, mejorar flujos de trabajo y resolver problemas específicos, generando un retorno de la inversión tangible.</p>
+					<a href="#" class="mt-4 inline-block text-seaGreen dark:text-silver hover:underline">Más información</a>
+				</div>
+				<div class="service bg-white dark:bg-davysGray p-6 rounded-lg shadow-md hover:scale-105 transition">
+					<h3 class="text-xl font-ubuntu font-bold text-darkGreen dark:text-silver mb-4">Sitios Web Llave en Mano</h3>
+					<p class="font-noto text-davysGray dark:text-lightGray">Creamos sitios web completos y personalizados que reflejan la identidad de tu marca y te ayudan a alcanzar tus objetivos de negocio, con opciones de financiación y mantenimiento.</p>
+					<a href="#" class="mt-4 inline-block text-seaGreen dark:text-silver hover:underline">Más información</a>
+				</div>
+				<div class="service bg-white dark:bg-davysGray p-6 rounded-lg shadow-md hover:scale-105 transition">
+					<h3 class="text-xl font-ubuntu font-bold text-darkGreen dark:text-silver mb-4">Presencia Online</h3>
+					<p class="font-noto text-davysGray dark:text-lightGray">Desde el diseño de landing pages hasta la gestión de redes sociales y estrategias de SEO local, te ayudamos a construir una presencia online sólida y efectiva.</p>
+					<a href="#" class="mt-4 inline-block text-seaGreen dark:text-silver hover:underline">Más información</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="dark:bg-davysGray py-16 mb-16 rounded-lg">
+			<div class="max-w-3xl mx-auto text-center">
+				<h2 class="text-3xl font-ubuntu font-bold text-silver dark:text-darkGreen mb-8">¿Por qué elegir AddKreative?</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left dark:text-lightGray">
+					<div>
+						<h3 class="text-xl font-ubuntu font-bold text-silver dark:text-darkGreen mb-4">Enfoque en resultados</h3>
+						<p class="font-noto text-silver dark:text-lightGray">Nos centramos en generar un impacto positivo en tu negocio, midiendo y optimizando cada acción.</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-ubuntu font-bold text-silver dark:text-darkGreen mb-4">Soluciones personalizadas</h3>
+						<p class="font-noto text-silver dark:text-lightGray">Adaptamos nuestras soluciones a tus necesidades específicas, sin plantillas ni soluciones genéricas.</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-ubuntu font-bold text-silver dark:text-darkGreen mb-4">Compromiso y lealtad</h3>
+						<p class="font-noto text-silver dark:text-lightGray">Nos convertimos en un socio estratégico a largo plazo, comprometidos con tu éxito.</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-ubuntu font-bold text-silver dark:text-darkGreen mb-4">Innovación constante</h3>
+						<p class="font-noto text-silver dark:text-lightGray">Nos mantenemos a la vanguardia de las últimas tecnologías para ofrecerte soluciones innovadoras y eficientes.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mb-16">
+			<h2 class="text-3xl font-ubuntu font-bold text-darkGreen dark:text-silver mb-8">Lo que dicen nuestros clientes</h2>
+			<p class="text-center text-davysGray dark:text-lightGray">Próximamente testimonios de nuestros clientes.</p>
+		</section>
+	</main>
 </Layout>

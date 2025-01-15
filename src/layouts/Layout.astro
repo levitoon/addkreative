@@ -1,22 +1,55 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import '../styles/global.css'; // Importa los estilos globales de Tailwind
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!DOCTYPE html>
+<html lang="es" class="dark"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddKreative: Soluciones digitales que impulsan tu rentabilidad.</title>
+
+    <meta property="og:title" content="AddKreative: Soluciones digitales que impulsan tu rentabilidad.">
+    <meta property="og:description" content="Ayudamos a las PYMEs a optimizar sus procesos y a crecer en el entorno digital mediante soluciones innovadoras y personalizadas.">
+    <meta property="og:image" content="/placeholder.jpg">
+    <meta property="og:url" content="https://tuweb.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AddKreative">
+    <meta property="og:locale" content="es_ES">
+
+    <meta name="description" content="Ayudamos a las PYMEs a optimizar sus procesos y a crecer en el entorno digital mediante soluciones innovadoras y personalizadas.">
+</head>
+<body class="bg-silver dark:bg-night dark:text-lightGray font-noto">
+
+    <header class="bg-silver dark:bg-night py-10 text-center">
+        <nav class="mb-5">
+            <ul class="flex justify-center flex-wrap">
+                <li class="mx-4 my-1">
+                    <a href="/" class="font-noto font-medium rounded px-3 py-2 transition hover:bg-darkGreen/10 dark:hover:bg-seaGreen/20 hover:text-seaGreen dark:hover:text-silver">Inicio</a>
+                </li>
+                <li class="mx-4 my-1">
+                    <a href="/micro-saas" class="font-noto font-medium rounded px-3 py-2 transition hover:bg-darkGreen/10 dark:hover:bg-seaGreen/20 hover:text-seaGreen dark:hover:text-silver">Micro SaaS</a>
+                </li>
+                <li class="mx-4 my-1">
+                    <a href="/productos-llave-en-mano" class="font-noto font-medium rounded px-3 py-2 transition hover:bg-darkGreen/10 dark:hover:bg-seaGreen/20 hover:text-seaGreen dark:hover:text-silver">Productos Llave en Mano</a>
+                </li>
+                <li class="mx-4 my-1">
+                    <a href="/presencia-online" class="font-noto font-medium rounded px-3 py-2 transition hover:bg-darkGreen/10 dark:hover:bg-seaGreen/20 hover:text-seaGreen dark:hover:text-silver">Presencia Online</a>
+                </li>
+                <li class="mx-4 my-1">
+                    <a href="/contacto" class="font-noto font-medium rounded px-3 py-2 transition hover:bg-darkGreen/10 dark:hover:bg-seaGreen/20 hover:text-seaGreen dark:hover:text-silver">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="text-4xl font-ubuntu font-bold text-darkGreen dark:text-silver">AddKreative: Soluciones digitales que impulsan tu rentabilidad.</h1>
+        <p class="font-noto text-davysGray dark:text-lightGray max-w-2xl mx-auto">En AddKreative, ayudamos a las pequeñas y medianas empresas a optimizar sus procesos y a crecer en el entorno digital a través de soluciones innovadoras y personalizadas. Nos especializamos en el desarrollo de Micro SaaS a medida, productos llave en mano y estrategias de presencia online que generan un impacto real en tu negocio.</p>
+        <a href="#" class="bg-seaGreen dark:bg-seaGreen/80 text-white font-noto font-medium py-3 px-6 rounded-lg transition hover:bg-darkGreen dark:hover:bg-darkGreen/80 hover:scale-105 shadow-md mt-4 inline-block">Solicita una consulta gratuita</a>
+    </header>
+
+    <slot />
+
+    <footer class="bg-night dark:bg-night text-white py-8 mt-16 text-center">
+        <p>Información de contacto | Redes sociales | Aviso legal | Copyright</p>
+    </footer>
+
+</body>
+</html>
